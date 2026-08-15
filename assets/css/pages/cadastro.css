@@ -21,8 +21,6 @@ body {
     background-attachment: fixed;
 }
 
-
-
 /* HEADER */
 
 .header {
@@ -57,38 +55,37 @@ body {
 
 .hero {
     text-align: center;
-    margin-top: 48px;
+    padding: clamp(24px, 5vw, 36px) clamp(16px, 5vw, 48px) clamp(24px, 5vw, 40px);
 }
 
 .hero h1 {
- color: var(--color-Branco);
-    font-size: clamp(48px, 5.5vw, 72px);
+    color: var(--color-Branco);
+    font-size: clamp(36px, 5vw, 56px);
     font-family: 'Montserrat B';
     line-height: 1.1;
+    margin-bottom: 16px;
 }
 
 .hero span {
     color: var(--color-RedSuave);
-    line-height: 85px;
     font-family: 'Montserrat B';
 }
 
 .hero p {
-    margin-top: 24px;
-    font-size: clamp(18px, 1.5vw, 20px);
+    font-size: clamp(16px, 1.2vw, 18px);
     color: var(--color-Cinza);
     font-family: 'Nunito R';
-    line-height: 32px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-
-
-/* FORM CARD */
-
+/* FORM AREA */
 .form-area {
     display: flex;
     justify-content: center;
-    margin: 60px;
+    padding: 0 clamp(24px, 5vw, 48px) 60px;
+    margin: 0;
 }
 
 .card-cadastro{
