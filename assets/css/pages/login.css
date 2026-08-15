@@ -1,0 +1,163 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(24px, 5vw, 48px);
+    
+    background-image: url(img/Gradient.png), url(img/Background.png), linear-gradient(130deg, var(--color-Azulfundo1), var(--color-Azulfundo2), #7f1d1de3);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-card {
+    background-color: var(--color-Azulfundo2);
+    width: 100%;
+    max-width: 480px;
+    border-radius: 24px;
+    padding: clamp(32px, 5vw, 48px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-header h2 {
+    color: var(--color-Branco);
+    font-family: 'Montserrat B', sans-serif;
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #9CA3AF;
+    font-family: 'Nunito R', sans-serif;
+    font-size: 16px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    color: #D1D5DB;
+    font-family: 'Nunito M', sans-serif;
+    font-size: 14px;
+}
+
+.relative-group {
+    position: relative;
+}
+
+.relative-group input {
+    padding-right: 48px; 
+}
+
+.btn-eye {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    background: transparent;
+    border: none;
+    
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.btn-eye:focus {
+    outline: none;
+}
+
+.input-group input {
+    background-color: var(--color-Azulfundo1);
+    border: 1px solid #374151;
+    color: var(--color-Branco);
+    font-family: 'Nunito R', sans-serif;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--color-LaranjaSuave);
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.2);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito R', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.lembrar-mim {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #9CA3AF;
+}
+
+.lembrar-mim input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.esqueci-senha {
+    color: var(--color-RedSuave);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.esqueci-senha:hover {
+    text-decoration: underline;
+}
+
+.btn-full {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-footer {
+    text-align: center;
+    border-top: 1px solid #374151;
+    padding-top: 24px;
+    color: #9CA3AF;
+    font-family: 'Nunito R', sans-serif;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: var(--color-RedSuave);
+    text-decoration: none;
+    font-family: 'Nunito SB', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
