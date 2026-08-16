@@ -255,18 +255,25 @@
     font-family: 'Montserrat B';
     font-size: 16px;
     color: var(--color-Branco);
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 20px;
+    padding-top: 16px;
+    padding-left: 4px;
 }
 
-.curso-item h5::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    top: -2px;
-    color: var(--color-LaranjaIntenso);
-    font-size: 24px;
+.tag-curso {
+    font-family: 'Nunito M';
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-weight: bold;
+    color: white;
+}
+
+.tag-fatec { 
+    background-color: #DC2626; 
+}
+
+.tag-etec { 
+    background-color: #2563EB; 
 }
 
 .curso-item p {

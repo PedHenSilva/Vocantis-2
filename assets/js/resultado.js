@@ -10,8 +10,6 @@ let criativoScore = document.querySelector('#criativoScore');
 let socialScore = document.querySelector('#socialScore');
 let praticoScore = document.querySelector('#praticoScore');
 
-console.log(criativo)
-
 let nameElement = document.querySelector('#profileName');
 let nickElement = document.querySelector('#nickname');
 let descElement = document.querySelector('#description');
@@ -21,11 +19,6 @@ let chr2Element = document.querySelector('#chr2');
 let chr3Element = document.querySelector('#chr3');
 let chr4Element = document.querySelector('#chr4');
 let chr5Element = document.querySelector('#chr5');
-let crs1Element = document.querySelector('#crs1');
-let crs2Element = document.querySelector('#crs2');
-let crs3Element = document.querySelector('#crs3');
-let crs4Element = document.querySelector('#crs4');
-let crs5Element = document.querySelector('#crs5');
 
 let mainProfileScore = 0
 
@@ -39,11 +32,31 @@ const profiles = [
         chr3: 'Atenção aos detalhes e precisão',
         chr4: 'Habilidade com números e dados',
         chr5: 'Gosta de pesquisa e investigação',
-        crs1: 'Desenvolvimento de Sofware Multiplataforma',
-        crs2: 'Engenharia de Dados',
-        crs3: 'Ciências Contábeis',
-        crs4: 'Estatística',
-        crs5: 'Administração',
+
+        crs1: {
+            nome: 'Análise e Desenvolvimento de Sistemas',
+            inst: 'FATEC'
+        },
+        crs2: {
+            nome: 'Ciência de Dados',
+            inst: 'ETEC'
+        },
+        crs3: {
+            nome: 'Inteligência Artificial',
+            inst: 'FATEC'
+        },
+        crs4: {
+            nome: 'Biotecnologia',
+            inst: 'ETEC'
+        },
+        crs5: {
+            nome: 'Big Data para Negócios',
+            inst: 'FATEC'
+        },
+        crs6: {
+            nome: 'Desenvolvimento de Sistemas',
+            inst: 'ETEC'
+        },
         compability: analitico
     },
 
@@ -56,11 +69,31 @@ const profiles = [
         chr3: 'Capacidade de trabalhar em equipe',
         chr4: 'Interesse em ajudar outras pessoas',
         chr5: 'Facilidade para resolver conflitos',
-        crs1: 'Recursos Humanos',
-        crs2: 'Serviço Social',
-        crs3: 'Psicologia',
-        crs4: 'Gestão Comercial',
-        crs5: 'Marketing',
+
+        crs1: {
+            nome: 'Enfermagem',
+            inst: 'ETEC'
+        },
+        crs2: {
+            nome: 'Desenvolvimento Comunitário',
+            inst: 'ETEC'
+        },
+        crs3: {
+            nome: 'Recursos Humanos',
+            inst: 'ETEC'
+        },
+        crs4: {
+            nome: 'Gestão de Recursos Humanos',
+            inst: 'FATEC'
+        },
+        crs5: {
+            nome: 'Gestão Hospitalar',
+            inst: 'FATEC'
+        },
+        crs6: {
+            nome: 'Gestão de Turismo',
+            inst: 'FATEC'
+        },
         compability: social
     },
 
@@ -73,11 +106,31 @@ const profiles = [
         chr3: 'Capacidade de inovar e criar',
         chr4: 'Habilidade para expressão artística',
         chr5: 'Pensamento não-linear',
-        crs1: 'Design Gráfico',
-        crs2: 'Publicidade e Propaganda',
-        crs3: 'Arquitetura',
-        crs4: 'Design de Interiores',
-        crs5: 'Comunicação Visual',
+
+        crs1: {
+            nome: 'Design Gráfico',
+            inst: 'ETEC'
+        },
+        crs2: {
+            nome: 'Design de Interiores',
+            inst: 'ETEC'
+        },
+        crs3: {
+            nome: 'Produção de Áudio e Vídeo',
+            inst: 'ETEC'
+        },
+        crs4: {
+            nome: 'Design de Mídias Digitais',
+            inst: 'FATEC'
+        },
+        crs5: {
+            nome: 'Jogos Digitais',
+            inst: 'FATEC'
+        },
+        crs6: {
+            nome: 'Produção Cultural',
+            inst: 'FATEC'
+        },
         compability: criativo
     },
 
@@ -90,11 +143,31 @@ const profiles = [
         chr3: 'Coragem para assumir riscos',
         chr4: 'Habilidade para tomar decisões',
         chr5: 'Ambição e determinação',
-        crs1: 'Administração',
-        crs2: 'Gestão Empresarial',
-        crs3: 'Marketing',
-        crs4: 'Comércio Exterior',
-        crs5: 'Gestão Financeira',
+
+        crs1: {
+            nome: 'Administração',
+            inst: 'ETEC'
+        },
+        crs2: {
+            nome: 'Marketing',
+            inst: 'ETEC'
+        },
+        crs3: {
+            nome: 'Comércio Exterior',
+            inst: 'ETEC'
+        },
+        crs4: {
+            nome: 'Gestão de Negócios e Inovação',
+            inst: 'FATEC'
+        },
+        crs5: {
+            nome: 'Gestão Empresarial',
+            inst: 'FATEC'
+        },
+        crs6: {
+            nome: 'Processos Gerenciais',
+            inst: 'FATEC'
+        },
         compability: empreendedor
     },
 
@@ -107,11 +180,31 @@ const profiles = [
         chr3: 'Aprendizado por experiência',
         chr4: 'Capacidade de execução eficiente',
         chr5: 'Resolução prática de problemas',
-        crs1: 'Mecânica',
-        crs2: 'Logística',
-        crs3: 'Mecatrônica Industrial',
-        crs4: 'Engenharia Civil',
-        crs5: 'Eletrônica Industrial',
+
+        crs1: {
+            nome: 'Mecânica',
+            inst: 'ETEC'
+        },
+        crs2: {
+            nome: 'Edificações',
+            inst: 'ETEC'
+        },
+        crs3: {
+            nome: 'Eletrotécnica',
+            inst: 'ETEC'
+        },
+        crs4: {
+            nome: 'Automação Industrial',
+            inst: 'FATEC'
+        },
+        crs5: {
+            nome: 'Construção de Edifícios',
+            inst: 'FATEC'
+        },
+        crs6: {
+            nome: 'Logística',
+            inst: 'FATEC'
+        },
         compability: pratico
     }
 ];
@@ -119,27 +212,43 @@ const profiles = [
 for (let i = 0; i < profiles.length; i++) {
     if (profiles[i].compability > mainProfileScore) {
         mainProfileScore = profiles[i].compability
+        compElement.innerHTML = `${mainProfileScore}%`
     }
 };
 
-for (let i = 0; i < profiles.length; i++) {
-    if (profiles[i].compability === mainProfileScore) {
-        nameElement.innerHTML = `Perfil ${profiles[i].profileName}`;
-        nickElement.innerHTML = `${profiles[i].nickname}`;
-        descElement.innerHTML = `${profiles[i].description}`;
-        chr1Element.innerHTML = `${profiles[i].chr1}`;
-        chr2Element.innerHTML = `${profiles[i].chr2}`;
-        chr3Element.innerHTML = `${profiles[i].chr3}`;
-        chr4Element.innerHTML = `${profiles[i].chr4}`;
-        chr5Element.innerHTML = `${profiles[i].chr5}`;
-        crs1Element.innerHTML = `${profiles[i].crs1}`;
-        crs2Element.innerHTML = `${profiles[i].crs2}`;
-        crs3Element.innerHTML = `${profiles[i].crs3}`;
-        crs4Element.innerHTML = `${profiles[i].crs4}`;
-        crs5Element.innerHTML = `${profiles[i].crs5}`;
-        compElement.innerHTML = `${profiles[i].compability}%`
-    }
-};
+const cursosGrid = document.querySelector('.cursos-grid');
+const listaChr = document.querySelector('.lista-customizada');
+
+// Procurar perfil predominante e aplica seus elementos/propriedades
+const perfilVencedor = profiles.find(p => p.compability === mainProfileScore);
+
+if (perfilVencedor) {
+    nameElement.innerHTML = `Perfil ${perfilVencedor.profileName}`;
+    nickElement.innerHTML = perfilVencedor.nickname;
+    descElement.innerHTML = perfilVencedor.description;
+
+    const caracteristicas = [
+        perfilVencedor.chr1, perfilVencedor.chr2, perfilVencedor.chr3, 
+        perfilVencedor.chr4, perfilVencedor.chr5
+    ];
+
+    listaChr.innerHTML = caracteristicas
+        .map(chr => `<li>${chr}</li>`)
+        .join('');
+
+    const cursosRecomendados = [
+        perfilVencedor.crs1, perfilVencedor.crs2, perfilVencedor.crs3, 
+        perfilVencedor.crs4, perfilVencedor.crs5, perfilVencedor.crs6
+    ];
+
+    cursosGrid.innerHTML = cursosRecomendados
+        .map(curso => `
+            <div class="curso-item">
+                <span class="tag-curso tag-${curso.inst.toLowerCase()}">${curso.inst}</span>
+                <h5>${curso.nome}</h5>
+            </div>
+        `).join('');
+}
 
 empreendedorScore.style.width = `${empreendedor}%`;
 analiticoScore.style.width = `${analitico}%`;
