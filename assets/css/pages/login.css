@@ -56,6 +56,7 @@
     color: #D1D5DB;
     font-family: 'Nunito M', sans-serif;
     font-size: 14px;
+    margin-left: 4px;
 }
 
 .relative-group {
@@ -148,11 +149,11 @@
     padding-top: 24px;
     color: #9CA3AF;
     font-family: 'Nunito R', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .login-footer a {
-    color: var(--color-RedSuave);
+    color: var(--color-LaranjaSuave);
     text-decoration: none;
     font-family: 'Nunito SB', sans-serif;
     transition: color 0.3s ease;

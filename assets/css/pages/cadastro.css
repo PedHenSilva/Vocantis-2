@@ -105,7 +105,7 @@ body {
     display: block;
     margin-left: 4px;
     margin-bottom: 5px;
-    color: #d0d8e0;
+    color: #D1D5DB;
     font-size: 14px;
     font-family: 'Nunito M', sans-serif;
 }
@@ -177,8 +177,8 @@ body {
 .checkbox span {
     margin: 8px 0 8px 0;
     font-family: 'Nunito R';
-    font-size: 16px;
-    color: #9CA3AF;
+    font-size: 14px;
+    color: var(--color-Cinza);
 }
 
 .checkbox span a {
