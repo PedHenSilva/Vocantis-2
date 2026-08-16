@@ -291,8 +291,8 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     /* Define o fundo igual ao background dos seus inputs (#243445) */
-    -webkit-box-shadow: 0 0 0 50px (--color-Azulfundo1) inset !important;
-    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 50px var(--color-Azulfundo1) inset !important;
+    -webkit-text-fill-color: var(--color-Branco) !important;
     transition: background-color 5000s ease-in-out 0s;
 }
 
