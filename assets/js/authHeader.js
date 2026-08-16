@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
         btnLogout.addEventListener("click", () => {
             // Remove a sessão
             localStorage.removeItem("sessaoVocantis"); 
-            // Recarrega a página
-            window.location.reload(); 
+            // Redireciona página Home
+            window.location.href = "index.html"; 
         });
     }
 });
